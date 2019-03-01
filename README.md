@@ -26,9 +26,13 @@ To build from source:
 ----------
 
 Project includes sources:
+
 src/main/java/org/neo/App.js       - startup class with main method
+
 src/main/java/org/neo/Neo.js        - Neo object
+
 src/main/java/org/neo/NeoWSClient.js  - most of the working logic is in this class
+
 src/main/java/org/neo/Utils.js    - utility class
 
 ---------
