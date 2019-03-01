@@ -302,7 +302,7 @@ public class NeoWSClient {
 	 * 
 	 * 
 	 */
-	protected HashMap<String, Neo> extractNeoObject(Object obj) throws JSONException, ParseException {
+	protected void extractNeoObject(Object obj) throws JSONException, ParseException {
 		if (obj instanceof JSONObject) {
 			Object id = ((JSONObject) obj).get("id");
 
@@ -336,7 +336,6 @@ public class NeoWSClient {
 				System.out.println("Neo id "+ id + " Miss distance (kms) " + closestValue);
 			setNeoDistEntry((String)id, closestValue, (String)approachDate, (JSONObject) obj);
 		}
-		return NeoSizeAndDist;
 	}
 
 	/*
@@ -357,7 +356,7 @@ public class NeoWSClient {
 	/*
 	 * Method: setNeoDistEntry
 	 * 
-	 * Description: assigns "dist" to a hashmap pair entry
+	 * Description: assigns "dist" to a hashmap Neo object entry
 	 */
 	protected void setNeoDistEntry(String id, Double dist, String approachDate, JSONObject jsonObj) throws ParseException {
 		Neo o = NeoSizeAndDist.get(id);

@@ -11,7 +11,7 @@ import org.json.JSONObject;
 /*
  * class Neo
  * 
- * Description: an object to store an Neo
+ * Description: Neo object
  */
 public class Neo {
 	String id;

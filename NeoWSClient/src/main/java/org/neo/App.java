@@ -1,7 +1,7 @@
 package org.neo;
 
 /**
- * Hello world!
+ * App
  *
  */
 public class App 
